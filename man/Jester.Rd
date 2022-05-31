@@ -1,17 +1,20 @@
 \name{Jester}
 \alias{Jester}
+\alias{JesterJokes}
+\alias{Jester5k}
+\alias{Jester}
 \alias{Jester_text}
 \docType{data}
 \title{Jester Dataset}
 \description{
-The data set contains the anonymous 
+The data set contains the anonymous
 ratings data from
-the Jester Online Joke Recommender System collected between 
-April 1999 and May 2003. 
+the Jester Online Joke Recommender System collected between
+April 1999 and May 2003.
 }
 \usage{data(Jester)}
 \format{
-  The format is: Formal class 'realRatingMatrix' [package "recommenderlab"] 
+  The format is: Formal class 'realRatingMatrix' [package "recommenderlab"]
 }
 \details{
 24983 x 100 rating matrix (24983 users and 100 jokes)
@@ -32,7 +35,7 @@ Information Retrieval, 4(2), 133-151. July 2001.
 data(Jester)
 Jester
 
-hist(getRatings(Jester), main="Distribution of ratings")
+hist(getRatings(Jester), main = "Distribution of ratings")
 
 # what is the best joke? (highest average rating)
 best <- which.max(colMeans(Jester))
